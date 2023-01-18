@@ -15,7 +15,7 @@ app.use(express.urlencoded({extented:true}));
 
 app.get('/',(req,res)=>{
     res.status(200);
-    res.json({msg:'Hello world'})
+    res.json({message:'hello'})
 });
 
 app.use('/api',protect,router);
